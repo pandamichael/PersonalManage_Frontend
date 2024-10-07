@@ -59,7 +59,7 @@ export default function Login() {
   return (
     <Box
       sx={{
-        background: "linear-gradient(135deg, #6DD5FA 0%, #2980B9 100%)", // 漸層背景
+        background: "linear-gradient(135deg, #6DD5FA 0%, #2980B9 100%)",
         backgroundSize: "cover",
         height: "100vh",
         width: "100wh",
@@ -84,15 +84,12 @@ export default function Login() {
               alignItems: "center",
             }}
           >
-            {/* 圓形圖標 */}
             <Avatar sx={{ m: 1, bgcolor: "primary.main" }}>
               <LockOutlinedIcon />
             </Avatar>
-            {/* 標題 */}
             <Typography component="h1" variant="h5" sx={{ fontWeight: "bold" }}>
               歡迎登入
             </Typography>
-            {/* 顯示錯誤或成功訊息 */}
             {error && (
               <Alert
                 severity={error === "登入成功！" ? "success" : "error"}
@@ -113,7 +110,7 @@ export default function Login() {
                 required
                 fullWidth
                 id="email"
-                label="信箱"
+                label="帳號"
                 name="email"
                 autoComplete="email"
                 autoFocus
